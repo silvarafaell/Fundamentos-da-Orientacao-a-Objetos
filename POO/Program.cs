@@ -1,4 +1,5 @@
 ﻿using System;
+using POO.ContentContext;
 
 namespace POO
 {
@@ -7,6 +8,8 @@ namespace POO
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            var course = new Course();
         }
     }
 }
