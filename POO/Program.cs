@@ -1,5 +1,6 @@
 ﻿using System;
 using POO.ContentContext;
+using System.Collections.Generic;
 
 namespace POO
 {
@@ -7,18 +8,15 @@ namespace POO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var articles = new List<Article>();
+            articles.Add(new Article("Artigo sobre OOP", "orientacao-objetos"));
 
-            var course = new Course();
-            var course = new ContentContext.Enums.EContentLevel.Beginner;
-            foreach (var item in course.Modules)
+            foreach (var article in articles)
             {
-                
+                Console.WriteLine(article.Id);
+                Console.WriteLine(article.Title);
+                Console.WriteLine(article.Url);
             }
-
-            var career = new Career();
-            career.Items.Add(new CareerItem());
-            Console.WriteLine(career.TotalCourses);
         }
     }
 }

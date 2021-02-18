@@ -6,7 +6,7 @@ namespace POO.ContentContext
     public class Course : Content
     {
         //Construtor
-        public Course()
+        public Course(string title, string url) :base(title, url)
         {
             Modules = new List<Module>();
         }
