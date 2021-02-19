@@ -10,6 +10,8 @@ namespace POO
         {
             var articles = new List<Article>();
             articles.Add(new Article("Artigo sobre OOP", "orientacao-objetos"));
+            articles.Add(new Article("Artigo sobre C#", "cshap"));
+            articles.Add(new Article("Artigo sobre .NET", "dotnet"));
 
             foreach (var article in articles)
             {
