@@ -3,6 +3,7 @@ using POO.ContentContext;
 using System.Collections.Generic;
 using System.Linq;
 using POO.NotificationContext;
+using POO.SubscriptionContex;
 
 namespace POO
 {
@@ -55,6 +56,11 @@ namespace POO
                         Console.WriteLine($"{notification.Property} - {notification.Message}");
                     }
                 }
+
+                var payPalSubscription = new PayPalSubscription();
+                var student = new Student();
+
+                student.CreateSubscription(payPalSubscription);
             }
         }
     }
