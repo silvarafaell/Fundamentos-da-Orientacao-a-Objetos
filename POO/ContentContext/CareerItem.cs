@@ -1,3 +1,5 @@
+using POO.NotificationContext;
+
 namespace POO.ContentContext
 {
     public class CareerItem : Base
@@ -5,7 +7,7 @@ namespace POO.ContentContext
         public CareerItem(int order, string title, string description, Course course)
         {
             if (Course == null)
-                throw new System.Exception("O curso não pode ser nulo");
+                AddNotification(new Notification("Course", "Curso invalido"));
 
             Order = order;
             Title = title;
